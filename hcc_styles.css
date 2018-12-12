@@ -1,0 +1,79 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Ethan Gruenemeier
+   Date: 12.12.18
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    background: #414C53;
+}
+
+.nav-wrapper #topnav {
+    line-height: 2em;
+    display: grid;
+    grid-template-columns: repeat(9, .25fr);
+    z-index: 99;
+}
+
+ul#topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #397484;
+}
+
+ul#topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#topimg {
+    background-image: url("Center-Conference.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #434242;
+}
+
+.IMGcontent {
+    position: relative;
+    padding: 10% 0 30% 0;
+}
+
+.text-center h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -100%);
+    color: #397484;
+    font-size: 3.5em;
+    text-shadow: 4px 2px #111;
+}
+
+footer {
+    text-align: center;
+    background: #397484;
+    padding: 1em 0;
+    border-radius: 1em;
+}

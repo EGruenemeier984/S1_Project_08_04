@@ -1,0 +1,27 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Ethan Gruenemeier 
+   Date: 12.12.18
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+/* Styles for the Table */
+
+table {
+    background: linear-gradient(to right, rgb(150, 209, 184), rgb(43, 107, 117));
+    border: 5px solid #D7F4EC;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 3px solid #D7F4EC;
+    vertical-align: top;
+}
