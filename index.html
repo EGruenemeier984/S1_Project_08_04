@@ -14,16 +14,17 @@
       Filename:index.html
 
    -->
-
+    <!-- Links to CSS and google font -->
     <link rel="stylesheet" href="hcc_schedule.css" />
     <link rel="stylesheet" href="hcc_styles.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- this is the header that contains the nav bar at the top of the page -->
     <header>
-        <img src="" alt="">
+        <h2 id="header-text">Hamilton Conference Center</h2>
         <div class="nav-wrapper">
             <ul id="topnav">
                 <li><a href="index.html">Home</a></li>
@@ -39,19 +40,19 @@
         </div>
 
     </header>
+    <!-- This article contains the web table along with the image at the top of the page -->
     <article>
         <br>
+        <!-- This is the code for the image and it has a class and a ID  -->
         <section id="topimg" class="text-center">
             <div class="IMGcontent">
+                <!-- the text is centered in the Image -->
                 <h1>Welcome</h1>
             </div>
         </section>
         <br>
         <table>
-            <colgroup>
-                <col id="firstCol">
-                <col class="dataCols" colspan="4">
-            </colgroup>
+            <!-- this is the table head contains the table heading cells in the first table row -->
             <thead>
                 <tr>
                     <th>Reservations for Conference Rooms <br> Tuesday, April 10</th>
@@ -64,6 +65,7 @@
                     <th>Green Room</th>
                 </tr>
             </thead>
+            <!-- This is the table foot and it contains cells at the bottom of the table this has two table rows. -->
             <tfoot>
                 <tr>
                     <th>Room Descriptions</th>
@@ -85,6 +87,7 @@
                         not be returned for cancellations within 24 hours of the scheduled event.</td>
                 </tr>
             </tfoot>
+            <!-- This is the table body and this has the cells for the body of the table each row is for a different time. -->
             <tbody>
                 <tr>
                     <th>8:00 AM</th>
@@ -160,6 +163,21 @@
         </table>
         <br>
     </article>
+
+    <article>
+        <h1>Our Conference Rooms</h1>
+        <ul id="room-list">
+            <li>Sunrise Room</li>
+            <li>Mountain View Room</li>
+            <li>Arbor Hall</li>
+            <li>Mitchell Theater</li>
+            <li>Gold Room</li>
+            <li>Blue Room</li>
+            <li>Green Room</li>
+        </ul>
+    </article>
+
+    <br>
 
     <footer>
         Hamilton Conference Center || 8711 West Park Lane Hamilton, OH 45011 || (513) 555 - 7911

@@ -13,15 +13,22 @@
 */
 
 /* General Styles */
-
+/* this applies to evreything and sets the box sizing to border box */
 * {
     box-sizing: border-box;
 }
 
+/* This effects the body element and sets the font to a google font */
+body {
+    font-family: 'Krub', sans-serif;
+}
+
+/* This effects the nav-wrapper class and sets the background to a hex value */
 .nav-wrapper {
     background: #414C53;
 }
 
+/* This effects the id of topnav in the class of nav-wrapper and makes the line-height 2 em, the display is grid and the columns are set along with the z-index */
 .nav-wrapper #topnav {
     line-height: 2em;
     display: grid;
@@ -29,6 +36,7 @@
     z-index: 99;
 }
 
+/* This effects the unordered list with the id of topnav and sets the margin + padding to 0 the discs in the list are gone and the overflow is hidden and the background color is a hex value */
 ul#topnav {
     list-style-type: none;
     margin: 0;
@@ -37,18 +45,22 @@ ul#topnav {
     background-color: #397484;
 }
 
+/* This effects the anchor tags in the list items that is in the unordered lists that has the id of topnav. This sets the display to block and the text color is white and the text is aligned to the center. padding for the top and bottom is 14px and the right and left is 16px. The underline from the links is gone and the text size is set to 0 */
 ul#topnav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: .8em;
 }
 
+/* This effects the nav links when hovered on sets the color to a hex value. */
 ul#topnav li a:hover:not(.active) {
     background-color: #111;
 }
 
+/* This effects the id of topimg and sets the background image to a jpg */
 #topimg {
     background-image: url("Center-Conference.jpg");
     background-size: cover;
@@ -56,11 +68,13 @@ ul#topnav li a:hover:not(.active) {
     color: #434242;
 }
 
+/* This effects the IMGcontent class and sets the position to relative and the padding. */
 .IMGcontent {
     position: relative;
     padding: 10% 0 30% 0;
 }
 
+/* This effects the h1 in the class of text-center and centers the text using transforms and sets the font size. */
 .text-center h1 {
     position: absolute;
     top: 50%;
@@ -71,9 +85,49 @@ ul#topnav li a:hover:not(.active) {
     text-shadow: 4px 2px #111;
 }
 
+/* This effects the header-text and aligns the text to center and teh background is set to a hex value. Border radius and the margins are also defined. */
+#header-text {
+    text-align: center;
+    background: #397484;
+    border-radius: 1em;
+    margin: .5em 4em;
+}
+
+/* This effects the footer element and aligns the text to center and the background to a hex value  also makes the top and bottom padding 1em and the corners are rounded*/
 footer {
     text-align: center;
     background: #397484;
     padding: 1em 0;
     border-radius: 1em;
+}
+
+/* This affects the id of room-list and gets rid of the the discs  */
+#room-list {
+    list-style-type: none;
+}
+
+/* This is a media query that affects the screen when its at least 641 pixels  */
+@media only screen and (min-width: 641px) {
+
+    /* This effects the last article in the webpage and sets it to a column layout of 3 also sets the column gap to 0 and puts a column rule that is 2 pix and is grey. */
+    article:last-of-type {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+
+        -moz-column-gap: 0px;
+        -webkit-column-gap: 0px;
+        column-gap: 0px;
+
+        -moz-column-rule: 2px solid grey;
+        -webkit-column-rule: 2px solid grey;
+        column-rule: 2px solid grey;
+    }
+
+    /* This effects the h1 is the last article and makes it span across all of the columns. */
+    article:last-of-type h1 {
+        -moz-column-span: all;
+        -webkit-column-span: all;
+        column-span: all;
+    }
 }
